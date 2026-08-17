@@ -2,8 +2,8 @@
 # Automatically generated file. DO NOT MODIFY
 #
 
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/xiaomi/aristotle
+
+PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/mi_ext/etc/init/init.miui.mi_ext.rc:$(TARGET_COPY_OUT_MI_EXT)/etc/init/init.miui.mi_ext.rc \
@@ -109,14 +109,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/aee_aed64.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed64.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/aee_aed64_v2.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed64_v2.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
-    vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/android.hidl.allocator@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hidl.allocator@1.0-service.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/bootlogoupdater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/bootlogoupdater.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/bpf_service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/bpf_service.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/consyslogger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/consyslogger.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/emdlogger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/emdlogger.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/f2fs.dfc.native@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/f2fs.dfc.native@1.0-service.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/hw/init.aee.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hw/init.aee.rc \
-    vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/hwservicemanager.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hwservicemanager.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/hyper_bpfloader.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hyper_bpfloader.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/hypsys_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/hypsys_system.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/init.hbt.leroy.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.hbt.leroy.rc \
@@ -287,7 +285,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/bluetooth_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_offload_audio_policy_configuration.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/bluetooth_ums_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_ums_offload_audio_policy_configuration.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/boringssl_self_test.zygote64_32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64_32.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/110_BlackGold.png \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/129_LeicaVivid.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/129_LeicaVivid.png \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/130_LeicaNatural.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/130_LeicaNatural.png \
@@ -469,26 +466,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.bluetooth-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth-service-mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.boot-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.mtk.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.4-service.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.health-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.example.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.identity@5.0-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity@5.0-service.mitee.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.ir-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir-service.example.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@4.0-service.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.wifi-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi-service-lazy.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
@@ -500,7 +491,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/hw/factory_init.connectivity.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.connectivity.common.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/hw/factory_init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.connectivity.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/hw/factory_init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.project.rc \
@@ -547,7 +537,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/mbrain-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mbrain-mtk-default.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/mcfota_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mcfota_service.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/miteelog.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/miteelog.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
@@ -561,7 +550,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/neuronservice-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/neuronservice-mtk-default.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/nfc-service-nxp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-nxp.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/secure_element-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secure_element-service.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/slad.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/slad.rc \
@@ -588,7 +576,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vgoservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vgoservice.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
@@ -602,56 +589,32 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.audio.low_latency.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.consumerir.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.faketouch.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.faketouch.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.identity_credential.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.mitee.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.location.gps.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.microphone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.microphone.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.se.omapi.ese.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.se.omapi.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.sensor.accelerometer.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.sensor.compass.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.sensor.gyroscope.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.sensor.light.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.sensor.proximity.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.sensor.stepcounter.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.sensor.stepdetector.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.distinct.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.distinct.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.touchscreen.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.touchscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.usb.accessory.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.usb.host.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute-0.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.vulkan.level-1.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_3.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_3.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.wifi.passpoint.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.software.ipsec_tunnels.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.software.opengles.deqp.level-2025-03-01.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level-2025-03-01.prebuilt.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.software.verified_boot.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level-2025-03-01.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level-2025-03-01.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/camera_extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/camera_extensions.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.gva.tflite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.gva.tflite.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/com.xiaomi.sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.xiaomi.sensor.xml \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/permissions/handheld_core_hardware.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.prebuilt.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
