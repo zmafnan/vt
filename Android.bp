@@ -12,6 +12,7 @@ soong_namespace {
 cc_prebuilt_library_shared {
     name: "android.hardware.audio.core-impl-mediatek",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -26633,6 +26634,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "android.hardware.audio.service-aidl.mediatek",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -29688,7 +29690,7 @@ cc_prebuilt_binary {
                 "proprietary/system_ext/bin/hw/android.hardware.audio.parameter_parser.service",
             ],
             shared_libs: [
-                "android.hardware.audio.core-V4-ndk",
+                "android.hardware.audio.core-V3-ndk",
                 "av-audio-types-aidl-ndk",
                 "libbase",
                 "libbinder_ndk",
