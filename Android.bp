@@ -1420,6 +1420,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libMiPhotoFilter",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1788,6 +1789,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libalLDC",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -7483,6 +7485,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libneuralnetworks_sl_driver_mtk_prebuilt",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -19611,6 +19614,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libneuron_adapter_mgvi",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
