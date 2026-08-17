@@ -29684,13 +29684,14 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "android.hardware.audio.parameter_parser.service",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
                 "proprietary/system_ext/bin/hw/android.hardware.audio.parameter_parser.service",
             ],
             shared_libs: [
-                "android.hardware.audio.core-V3-ndk",
+                "android.hardware.audio.core-V4-ndk",
                 "av-audio-types-aidl-ndk",
                 "libbase",
                 "libbinder_ndk",
