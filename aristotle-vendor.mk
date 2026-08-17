@@ -555,7 +555,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/touch_boost.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/touch_boost.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/v3avpud-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud-64b.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@V1-service.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc \
