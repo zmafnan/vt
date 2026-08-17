@@ -610,6 +610,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "hwcomposer.mtk_common",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -762,6 +763,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.pq_aidl-impl",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -874,6 +876,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "sound_trigger.primary.default",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1080,6 +1083,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.videotelephony-impl",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1329,6 +1333,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libHISCppAlgos",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1723,6 +1728,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libalAILDC",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1753,6 +1759,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libalAI_Seg",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1925,6 +1932,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libalhLDC",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -2210,6 +2218,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libarcsoft_portrait_lighting_c",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -2260,6 +2269,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libarcsoft_super_night_raw",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -3068,6 +3078,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libcamalgo.hdr10p",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -3423,6 +3434,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libcodec2_fsr",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -4622,6 +4634,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libellv",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -4893,6 +4906,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libgpud",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5218,6 +5232,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libhis_face_tracking",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5244,6 +5259,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libhis_motion_tracker",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5536,6 +5552,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiStereoFactoryRemapLib",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5563,6 +5580,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiai_deblur",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5589,6 +5607,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiai_portraitsupernight",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5642,6 +5661,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmialgo_aio_seg",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5670,6 +5690,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmialgo_ie_capture",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5698,6 +5719,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmialgo_sd",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5752,6 +5774,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmialgo_video_seg_depth",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5825,6 +5848,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmibokeh_845_video",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5852,6 +5876,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmibokeh_mt6873",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -5973,6 +5998,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiphone_preview_bokeh",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -6003,6 +6029,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiphone_preview_bokeh_mono",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -6030,6 +6057,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiphone_preview_depth",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -6058,6 +6086,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiphone_preview_mdbokeh",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -7745,6 +7774,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libpowerhal",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -8074,6 +8104,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "librfs_warp",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -8601,6 +8632,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvideoBokeh",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -12664,6 +12696,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libcamalgo.aibc",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -15723,6 +15756,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmtkcam.featurepipe.capture",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -16797,6 +16831,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmtkcam_grallocutils",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -16838,6 +16873,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmtkcam_grallocutils_aidlv2helper",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -16911,6 +16947,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmtkcam_hal_aidl_common",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -19235,6 +19272,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmtkcam_thirdparty.customer",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -20171,6 +20209,7 @@ cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.aee@1.1-vendor",
     stem: "vendor.mediatek.hardware.aee@1.1",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -20535,6 +20574,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.camera.isphal-V1-ndk",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -22485,6 +22525,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.pq_aidl-V4-ndk",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -22512,6 +22553,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.pq_aidl-V7-ndk",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -23334,6 +23376,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libimsma",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -23478,7 +23521,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libbinder_ndk",
                 "android.hardware.health@2.0",
-                "android.hardware.health-V4-ndk",
+                "android.hardware.health-V2-ndk",
                 "android.hardware.thermal@2.0",
                 "android.hardware.thermal-V3-ndk",
                 "libnativewindow",
@@ -23963,6 +24006,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libskuparser_ffi",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -24712,6 +24756,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "displayfeature.default",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -24841,6 +24886,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libadaptivehdr",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -24907,6 +24953,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libcolortempmode",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25001,6 +25048,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libdither",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25042,6 +25090,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libdynamicelvss",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25121,6 +25170,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libflatmode",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25161,6 +25211,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libhistprocess",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25202,6 +25253,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmfido_mitee",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25233,6 +25285,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiBrightness",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25275,6 +25328,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmiSensorCtrl",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25449,6 +25503,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmlipay_mitee",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25480,6 +25535,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmt_mitee",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25527,6 +25583,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libpaperMode",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25567,6 +25624,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "librhytheyecare",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25608,6 +25666,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libsdr2hdr",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25649,6 +25708,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libsoter",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25680,6 +25740,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libsre",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25722,6 +25783,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libtruetone",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -25763,6 +25825,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvideomode",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -26345,6 +26408,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "dmc_core",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -26442,8 +26506,8 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
-                "android.hardware.health-V4-ndk",
-                "android.hardware.light-V2-ndk",
+                "android.hardware.health-V1-ndk",
+                "android.hardware.light-V1-ndk",
                 "libbinder_ndk",
                 "libbinder",
                 "android.hardware.light@2.0",
@@ -26754,6 +26818,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "android.hardware.drm-service.clearkey",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -27419,7 +27484,7 @@ cc_prebuilt_binary {
                 "libwifi-hal",
                 "libwifi-system-iface",
                 "libxml2",
-                "android.hardware.wifi-V4-ndk",
+                "android.hardware.wifi-V3-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -27676,6 +27741,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.mediatek.hardware.aee@1.1-service",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -27709,6 +27775,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.mediatek.hardware.aee@V1-service",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28296,6 +28363,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.xiaomi.hardware.misys.core-service",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28326,6 +28394,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.xiaomi.hardware.secure_element-service",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28360,6 +28429,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.xiaomi.hardware.vibratorfeature.service",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28395,6 +28465,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vendor.xiaomi.sensor.citsensorservice.aidl",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28442,6 +28513,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "vtservice_aidl",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28488,7 +28560,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libnl",
                 "libssl",
-                "android.hardware.wifi.supplicant-V5-ndk",
+                "android.hardware.wifi.supplicant-V4-ndk",
                 "android.system.keystore2-V1-ndk",
                 "vendor.xiaomi.hardware.wifi.supplicant-V1-ndk",
                 "libbase",
@@ -28512,6 +28584,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "hypsys_vendor",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28618,6 +28691,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "loghidlvendorservice",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28715,6 +28789,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "meta_tst",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28814,6 +28889,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "mnld",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -30495,6 +30571,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "mfp-daemon",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -30577,6 +30654,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "mlipayd_mitee",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -30681,6 +30759,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "soterd",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
