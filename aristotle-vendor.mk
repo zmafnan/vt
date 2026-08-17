@@ -353,7 +353,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/ellv_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ellv_params.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/facesr_hd_composite_ref_4.5.10_mtkg610_apu_segapu_partblock_qualityv47r3.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facesr_hd_composite_ref_4.5.10_mtkg610_apu_segapu_partblock_qualityv47r3.model \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/fold_qianzhi_512_edutpu140_ar36912_depth128_dd48_2_128_inscale_q12qrqfct_rotate45_scale_distortcolor_quantaware_step205420_without_softmax_mdla30.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/fold_qianzhi_512_edutpu140_ar36912_depth128_dd48_2_128_inscale_q12qrqfct_rotate45_scale_distortcolor_quantaware_step205420_without_softmax_mdla30.dla \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/gma_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gma_custom.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/ldc/AI_Seg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/AI_Seg.bin \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/ldc/LDC_FRONT_FPC_TUNING.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/LDC_FRONT_FPC_TUNING.bin \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/camera/ldc/LDC_FRONT_FPC_TUNING_AI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/LDC_FRONT_FPC_TUNING_AI.bin \
@@ -2226,4 +2225,5 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libpqconfig_so \
     vendor_lib64_libpqparamparser_so \
     vendor_lib64_libstereoinfoaccessor_vsdof_so \
-    vendor_lib64_mtk000_mipi_raw_IdxMgr_so
+    vendor_lib64_mtk000_mipi_raw_IdxMgr_so \
+    gma_custom.xml

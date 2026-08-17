@@ -32819,3 +32819,13 @@ install_symlink {
     installed_location: "lib64/mtk000_mipi_raw_IdxMgr.so",
     symlink_target: "/vendor/lib64/mt6895/mtk000_mipi_raw_IdxMgr.so",
 }
+
+prebuilt_etc {
+    name: "gma_custom.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/camera/gma_custom.xml",
+    filename: "gma_custom.xml",
+    sub_dir: "camera",
+    soc_specific: true,
+}
+
