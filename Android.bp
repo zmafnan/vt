@@ -27469,6 +27469,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "android.hardware.wifi-service-lazy",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -27484,7 +27485,7 @@ cc_prebuilt_binary {
                 "libwifi-hal",
                 "libwifi-system-iface",
                 "libxml2",
-                "android.hardware.wifi-V3-ndk",
+                "android.hardware.wifi-V4-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -28547,6 +28548,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "wpa_supplicant",
     owner: "xiaomi",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -28560,7 +28562,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libnl",
                 "libssl",
-                "android.hardware.wifi.supplicant-V4-ndk",
+                "android.hardware.wifi.supplicant-V5-ndk",
                 "android.system.keystore2-V1-ndk",
                 "vendor.xiaomi.hardware.wifi.supplicant-V1-ndk",
                 "libbase",
