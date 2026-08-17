@@ -1,0 +1,330 @@
+import /vendor/etc/init/hw/init.mtkgki.rc
+import /vendor/etc/init/hw/init.batterysecret.rc
+
+# MTK project .rc configure
+
+#mi thermald init
+import /vendor/etc/init/hw/init.mi_thermald.rc
+
+on init
+    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+    mkdir /storage/usbotg 0700 root root
+    write /sys/module/musb_hdrc/parameters/mu3d_force_on 1
+
+# metis
+on property:persist.sys.turbosched.enable.coreApp.optimizer=true
+    write  /sys/module/metis/parameters/mi_fboost_enable 1
+
+
+on post-fs-data
+
+# metis
+    chmod 0666 /dev/metis
+    restorecon /dev/metis
+    chown 0666 /sys/module/metis/parameters
+    chmod 0664 /sys/module/metis/parameters/add_rebind_task_lit
+    chmod 0664 /sys/module/metis/parameters/add_rebind_task_mid
+    chmod 0664 /sys/module/metis/parameters/add_rebind_task_big
+    chmod 0664 /sys/module/metis/parameters/del_rebind_task_lit
+    chmod 0664 /sys/module/metis/parameters/del_rebind_task_mid
+    chmod 0664 /sys/module/metis/parameters/del_rebind_task_big
+    chmod 0664 /sys/module/metis/parameters/add_lclus_affinity_uidlist
+    chmod 0664 /sys/module/metis/parameters/del_lclus_affinity_uidlist
+    chmod 0664 /sys/module/metis/parameters/add_mclus_affinity_uidlist
+    chmod 0664 /sys/module/metis/parameters/del_mclus_affinity_uidlist
+    chmod 0664 /sys/module/metis/parameters/add_bclus_affinity_uidlist
+    chmod 0664 /sys/module/metis/parameters/del_bclus_affinity_uidlist
+    chmod 0664 /sys/module/metis/parameters/reset_clus_affinity_uidlist
+    chown root system /sys/module/metis/parameters
+    chown root system /sys/module/metis/parameters/add_rebind_task_lit
+    chown root system /sys/module/metis/parameters/add_rebind_task_mid
+    chown root system /sys/module/metis/parameters/add_rebind_task_big
+    chown root system /sys/module/metis/parameters/del_rebind_task_lit
+    chown root system /sys/module/metis/parameters/del_rebind_task_mid
+    chown root system /sys/module/metis/parameters/del_rebind_task_big
+    chown root system /sys/module/metis/parameters/add_lclus_affinity_uidlist
+    chown root system /sys/module/metis/parameters/del_lclus_affinity_uidlist
+    chown root system /sys/module/metis/parameters/add_mclus_affinity_uidlist
+    chown root system /sys/module/metis/parameters/del_mclus_affinity_uidlist
+    chown root system /sys/module/metis/parameters/add_bclus_affinity_uidlist
+    chown root system /sys/module/metis/parameters/del_bclus_affinity_uidlist
+    chown root system /sys/module/metis/parameters/reset_clus_affinity_uidlist
+    chmod 0666 /dev/metis
+    restorecon /dev/metis
+    chmod 0666 /sys/module/metis/parameters/mi_viptask
+    restorecon /sys/module/metis/parameters/mi_viptask
+    chmod 0666 /sys/module/metis/parameters/mi_viptask_balance
+    restorecon /sys/module/metis/parameters/mi_viptask_balance
+    chmod 0666 /sys/module/metis/parameters/mi_boost_duration
+    restorecon /sys/module/metis/parameters/mi_boost_duration
+    chmod 0666 /sys/class/thermal/thermal_message/boost
+    restorecon /sys/class/thermal/thermal_message/boost
+    chmod 0666 /sys/module/metis/parameters/vip_link_enable
+    restorecon /sys/module/metis/parameters/vip_link_enable
+    chmod 0666 /sys/module/metis/parameters/vip_link_async_binder
+    restorecon /sys/module/metis/parameters/vip_link_async_binder
+    chmod 0666 /sys/module/metis/parameters/mi_fboost_enable
+    restorecon /sys/module/metis/parameters/mi_fboost_enable
+    chmod 0666 /sys/module/metis/parameters/add_mi_viptask_enqueue_boost
+    restorecon /sys/module/metis/parameters/add_mi_viptask_enqueue_boost
+    chmod 0666 /sys/module/metis/parameters/del_mi_viptask_enqueue_boost
+    restorecon /sys/module/metis/parameters/del_mi_viptask_enqueue_boost
+    chmod 0666 /sys/module/metis/parameters/add_mi_viptask_sched_priority
+    restorecon /sys/module/metis/parameters/add_mi_viptask_sched_priority
+    chmod 0666 /sys/module/metis/parameters/del_mi_viptask_sched_priority
+    restorecon /sys/module/metis/parameters/del_mi_viptask_sched_priority
+    chmod 0666 /sys/module/metis/parameters/add_mi_viptask_sched_lit_core
+    restorecon /sys/module/metis/parameters/add_mi_viptask_sched_lit_core
+    chmod 0666 /sys/module/metis/parameters/del_mi_viptask_sched_lit_core
+    restorecon /sys/module/metis/parameters/del_mi_viptask_sched_lit_core
+    chmod 0666 /sys/module/metis/parameters/is_break_enable
+    restorecon /sys/module/metis/parameters/is_break_enable
+    chmod 0666 /sys/module/metis/parameters/trace_motion_event
+    restorecon /sys/module/metis/parameters/trace_motion_event
+    chown root system /sys/module/metis/parameters/trace_motion_event
+    chmod 0666 /sys/module/metis/parameters/cold_start_app_tgid
+    restorecon /sys/module/metis/parameters/cold_start_app_tgid
+    chmod 0666 /sys/module/metis/parameters/protect_cs
+    restorecon /sys/module/metis/parameters/protect_cs
+    chmod 0666 /sys/module/metis/parameters/set_static_vip
+    restorecon /sys/module/metis/parameters/set_static_vip
+
+# migt
+    chmod 0666 /dev/migt
+    restorecon /dev/migt
+    chmod 0777 /sys/module/migt/parameters/migt_freq
+    restorecon /sys/module/migt/parameters/migt_freq
+    chmod 0777 /sys/module/migt/parameters/migt_ms
+    restorecon /sys/module/migt/parameters/migt_ms
+    chmod 0777 /sys/module/migt/parameters/migt_thresh
+    restorecon /sys/module/migt/parameters/migt_thresh
+    chmod 0777 /sys/module/migt/parameters/boost_policy
+    restorecon /sys/module/migt/parameters/boost_policy
+    chmod 0777 /sys/module/migt/parameters/fps_variance_ratio
+    restorecon /sys/module/migt/parameters/fps_variance_ratio
+    chmod 0777 /sys/module/migt/parameters/super_task_max_num
+    restorecon /sys/module/migt/parameters/super_task_max_num
+    chmod 0777 /sys/module/migt/parameters/migt_ceiling_freq
+    restorecon /sys/module/migt/parameters/migt_ceiling_freq
+    chmod 0777 /sys/module/migt/parameters/stask_candidate_num
+    restorecon /sys/module/migt/parameters/stask_candidate_num
+    chmod 0666 /sys/module/migt/parameters/glk_disable
+    restorecon /sys/module/migt/parameters/glk_disable
+    chmod 0666 /sys/module/migt/parameters/glk_fbreak_enable
+    restorecon /sys/module/migt/parameters/glk_fbreak_enable
+    chmod 0666 /sys/module/migt/parameters/glk_freq_limit_walt
+    restorecon /sys/module/migt/parameters/glk_freq_limit_walt
+    chmod 0666 /sys/module/migt/parameters/glk_minfreq
+    restorecon /sys/module/migt/parameters/glk_minfreq
+    chmod 0666 /sys/module/migt/parameters/glk_maxfreq
+    restorecon /sys/module/migt/parameters/glk_maxfreq
+    chmod 0666 /sys/module/migt/parameters/force_stask_to_big
+    restorecon /sys/module/migt/parameters/force_stask_to_big
+    chmod 0666 /sys/module/migt/parameters/force_reset_runtime
+    restorecon /sys/module/migt/parameters/force_reset_runtime
+    chmod 0777 /sys/module/metis/parameters/minor_window_app
+    restorecon /sys/module/metis/parameters/minor_window_app
+    chmod 0666 /sys/module/migt/parameters/mi_viptask
+    restorecon /sys/module/migt/parameters/mi_viptask
+    chmod 0666 /sys/module/migt/parameters/mi_freq_enable
+    restorecon /sys/module/migt/parameters/mi_freq_enable
+
+#Camera
+    chmod 0660 /dev/MAINAF
+    chown system camera /dev/MAINAF
+
+    chmod 0660 /dev/MAINAF2
+    chown system camera /dev/MAINAF2
+
+    chmod 0660 /dev/SUBAF
+    chown system camera /dev/SUBAF
+
+    chmod 0660 /dev/GAF001AF
+    chown system camera /dev/GAF001AF
+
+    chmod 0660 /dev/DW9714AF
+    chown system camera /dev/DW9714AF
+
+    chmod 0660 /dev/LC898212AF
+    chown system camera /dev/LC898212AF
+
+    chmod 0660 /dev/BU64745GWZAF
+    chown system camera /dev/BU64745GWZAF
+
+#SMB
+    chown system system /proc/smb/ScreenComm
+    chmod 0660 /proc/smb/ScreenComm
+
+    chmod 0660 /dev/spm
+    chown system system /dev/spm
+
+# MIUI ADD: Performance_BoostFramework
+    chown system system /sys/module/perf_helper/mimd/mimdtrigger
+# END Performance_BoostFramework
+
+#Thermal
+    mkdir /data/vendor/thermal 0771 root system
+    mkdir /data/vendor/thermal/config 0771 root system
+    chown system system /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/class/thermal/thermal_message/boost
+    chown system system /sys/class/thermal/thermal_message/temp_state
+    chown system system /sys/class/thermal/thermal_message/balance_mode
+    chown system system /sys/class/thermal/thermal_message/market_download_limit
+    chown system system /sys/class/thermal/thermal_message/thermal_max_brightness
+    chown cameraserver cameraserver /sys/class/thermal/thermal_message/flash_state
+    chown cameraserver cameraserver /sys/class/thermal/thermal_message/torch_real_level
+    chown system system /sys/class/thermal/thermal_message/connsys_limit
+    chown system system /sys/class/mi_display/disp-DSI-0/thermal_hbm_disabled
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/thermal_hbm_disabled
+    chown system system /sys/class/thermal/thermal_message/charger_temp
+    chown system system /sys/class/power_supply/battery/constant_charge_current
+    chmod 0664 /sys/class/power_supply/battery/constant_charge_current
+    chown system system /sys/class/thermal/thermal_message/gpu_thermal_limit
+    chown system system /sys/class/thermal/thermal_message/video_mode
+    chown system system /sys/class/thermal/thermal_message/temp_aware
+    chown system system /sys/class/thermal/thermal_message/connsys_limit
+    chown system system /sys/class/thermal/thermal_message/atc_enable
+    chmod 0664 /sys/class/thermal/thermal_message/atc_enable
+
+#NFC
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    chmod 0660 /dev/nq-nci
+    chown nfc nfc /dev/nq-nci
+    chmod 0660 /dev/p73
+    chown nfc nfc /dev/p73
+
+#WIFI
+    mkdir /data/vendor/wlan_logs 0777 root shell
+
+service vendor_tcpdump /vendor/bin/tcpdump-vendor -i any -W 3 -C 5 -s 134 -w /data/vendor/wlan_logs/tcpdump.pcap -Z system
+       class main
+       user root
+       group root wifi
+       disabled
+       oneshot
+
+on property:ro.debuggable=1
+    setprop persist.vendor.tcpdump.enable true
+    setprop persist.vendor.connsysfw.enable true
+
+on property:persist.vendor.tcpdump.enable=true
+    start vendor_tcpdump
+
+on property:persist.vendor.tcpdump.enable=false
+    stop vendor_tcpdump
+
+on property:persist.vendor.connsysfw.enable=true
+    start connsyslogger
+
+on property:persist.vendor.connsysfw.enable=false && property:vendor.connsysfw.running=0
+    stop connsyslogger
+
+on init
+    # Refer to http://source.android.com/devices/tech/storage/index.html
+    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
+    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
+    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
+    #           Developers expect data stored in these locations to be available over long periods of time."
+    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
+    #
+    # export SECONDARY_STORAGE /storage/sdcard1
+
+service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
+    user system
+    group system
+    class late_start
+    disabled
+
+# start mmstat
+on property:sys.boot_completed=1
+    mkdir /sys/kernel/tracing/instances/mmstat 711
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
+    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
+    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
+
+on boot
+    #Display feature sysfs node
+    chown system system /sys/class/mi_display/disp-DSI-0/disp_param
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/disp_param
+    chown system system /sys/class/mi_display/disp-DSI-0/mipi_rw
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/mipi_rw
+    chown system system /sys/class/mi_display/disp-DSI-0/panel_info
+    chmod 0444 /sys/class/mi_display/disp-DSI-0/panel_info
+    chown system system /sys/class/mi_display/disp-DSI-0/wp_info
+    chmod 0444 /sys/class/mi_display/disp-DSI-0/wp_info
+    chown system system /sys/class/mi_display/disp-DSI-0/dynamic_fps
+    chmod 0444 /sys/class/mi_display/disp-DSI-0/dynamic_fps
+    chown system system /sys/class/mi_display/disp-DSI-0/doze_brightness
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/doze_brightness
+    chown system system /sys/class/mi_display/disp-DSI-0/disp_count
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/disp_count
+    chown system system /sys/class/mi_display/disp-DSI-0/brightness_clone
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/brightness_clone
+    chown system system /sys/class/mi_display/disp-DSI-0/factory_max_brightness
+    chmod 0444 /sys/class/mi_display/disp-DSI-0/factory_max_brightness
+    chown system system /sys/class/mi_display/disp-DSI-0/backlight
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/backlight
+    chown system system /sys/class/mi_display/disp-DSI-0/dc_status
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/dc_status
+    chown system system /sys/class/mi_display/disp-DSI-0/flat_mode
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/flat_mode
+    chown system system /sys/class/mi_display/disp-DSI-0/gir
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/gir
+    chown system system /sys/class/mi_display/disp-DSI-0/gray_scale_info
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/gray_scale_info
+    chown system system /sys/class/mi_display/disp-DSI-0/idle
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/idle
+    chown system system /sys/class/mi_display/disp-DSI-0/panel_event
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/panel_event
+    chown system system /sys/class/mi_display/disp-DSI-0/sn_info
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/sn_info
+    #camera flash led
+    chown system system /sys/class/flashlight_core/flashlight/torchbrightness
+    chmod 0664 /sys/class/flashlight_core/flashlight/torchbrightness
+# midualbokeh
+    copy /vendor/etc/camera/mialgo_capture_mdbokeh_54329dee8f160f288c574caaf67bbe3f.cache /data/vendor/camera/mialgo_capture_mdbokeh_54329dee8f160f288c574caaf67bbe3f.cache
+    chown cameraserver audio  /data/vendor/camera/mialgo_capture_mdbokeh_54329dee8f160f288c574caaf67bbe3f.cache
+    chmod 0666 /data/vendor/camera/mialgo_capture_mdbokeh_54329dee8f160f288c574caaf67bbe3f.cache
+    copy /vendor/etc/camera/mialgo_mvpu_capture_mdbokeh_MvpuBinVer_20230221111342.cache /data/vendor/camera/mialgo_mvpu_capture_mdbokeh_MvpuBinVer_20230221111342.cache
+    chown cameraserver audio  /data/vendor/camera/mialgo_mvpu_capture_mdbokeh_MvpuBinVer_20230221111342.cache
+    chmod 0666 /data/vendor/camera/mialgo_mvpu_capture_mdbokeh_MvpuBinVer_20230221111342.cache
+    copy /vendor/etc/camera/mage_mtk_capture_mdbokeh_cl.bin /data/vendor/camera/mage_mtk_capture_mdbokeh_cl.bin
+    chown cameraserver audio  /data/vendor/camera/mage_mtk_capture_mdbokeh_cl.bin
+    chmod 0666 /data/vendor/camera/mage_mtk_capture_mdbokeh_cl.bin
+    copy /vendor/etc/camera/mage_mtk_capture_mdbokeh_mvpu.bin /data/vendor/camera/mage_mtk_capture_mdbokeh_mvpu.bin
+    chown cameraserver audio  /data/vendor/camera/mage_mtk_capture_mdbokeh_mvpu.bin
+    chmod 0666 /data/vendor/camera/mage_mtk_capture_mdbokeh_mvpu.bin
+    copy /vendor/etc/camera/mage_mtk_capture_mdbokeh_mono_mvpu.bin /data/vendor/camera/mage_mtk_capture_mdbokeh_mono_mvpu.bin
+    chown cameraserver audio  /data/vendor/camera/mage_mtk_capture_mdbokeh_mono_mvpu.bin
+    chmod 0666 /data/vendor/camera/mage_mtk_capture_mdbokeh_mono_mvpu.bin
+    copy /vendor/etc/camera/mage_mtk_capture_mdbokeh_portrait_mvpu.bin /data/vendor/camera/mage_mtk_capture_mdbokeh_portrait_mvpu.bin
+    chown cameraserver audio  /data/vendor/mage_mtk_capture_mdbokeh_portrait_mvpu.bin
+    chmod 0666 /data/vendor/camera/mage_mtk_capture_mdbokeh_portrait_mvpu.bin
+    copy /vendor/etc/camera/mage_mtk_capture_mdbokeh_soft_mvpu.bin /data/vendor/camera/mage_mtk_capture_mdbokeh_soft_mvpu.bin
+    chown cameraserver audio  /data/vendor/camera/mage_mtk_capture_mdbokeh_soft_mvpu.bin
+    chmod 0666 /data/vendor/camera/mage_mtk_capture_mdbokeh_soft_mvpu.bin
+    copy /vendor/etc/camera/mage_mtk_capture_mdbokeh_spin_mvpu.bin /data/vendor/camera/mage_mtk_capture_mdbokeh_spin_mvpu.bin
+    chown cameraserver audio  /data/vendor/camera/mage_mtk_capture_mdbokeh_spin_mvpu.bin
+    chmod 0666 /data/vendor/camera/mage_mtk_capture_mdbokeh_spin_mvpu.bin
+    copy /vendor/etc/camera/mage_mtk_capture_bokeh_cl.bin /data/vendor/camera/mage_mtk_capture_bokeh_cl.bin
+    chown cameraserver audio  /data/vendor/camera/mage_mtk_capture_bokeh_cl.bin
+    chmod 0666 /data/vendor/camera/mage_mtk_capture_bokeh_cl.bin
+    copy /vendor/etc/camera/mage_mtk_capture_bokeh_mvpu.bin /data/vendor/camera/mage_mtk_capture_bokeh_mvpu.bin
+    chown cameraserver audio  /data/vendor/camera/mage_mtk_capture_bokeh_mvpu.bin
+    chmod 0666 /data/vendor/camera/mage_mtk_capture_bokeh_mvpu.bin
+
+# smart pa start
+    mkdir /mnt/vendor/persist/factory/ 0755 system system
+    mkdir /mnt/vendor/persist/factory/audio 0755 system system
+    mkdir /data/vendor/cit/ 0755 system system
+    chown system system /sys/class/smartpa/re25_calib
+    chmod 0666 /sys/class/smartpa/re25_calib
+    mkdir /mnt/vendor/persist/audio 0755 system system
+
+on property:vendor.audio.cit.spkcal.copy=true
+    chmod 644 /data/vendor/cit/aw_cali.bin
+    copy /data/vendor/cit/aw_cali.bin /mnt/vendor/persist/factory/audio/aw_cali.bin
+    chmod 666 /mnt/vendor/persist/factory/audio/aw_cali.bin
+    chmod 666 /data/vendor/cit/aw_cali.bin
+# smart pa end

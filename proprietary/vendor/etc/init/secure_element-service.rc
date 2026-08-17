@@ -1,0 +1,10 @@
+service vendor.secure_element_hal_service /vendor/bin/hw/vendor.xiaomi.hardware.secure_element-service
+    class early_hal
+    user system
+    group system secure_element nfc
+
+on fs
+    chmod 0660 /dev/p73
+    chown nfc nfc /dev/p73
+    chmod 0666 /sys/nfc/chip_name
+    chown nfc nfc /sys/nfc/chip_name

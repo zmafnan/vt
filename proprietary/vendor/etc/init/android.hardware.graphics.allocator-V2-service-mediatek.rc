@@ -1,0 +1,10 @@
+service vendor.gralloc-v2 /vendor/bin/hw/android.hardware.graphics.allocator-V2-service-mediatek
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    onrestart restart vendor.hwcomposer
+    onrestart restart camerahalserver
+    writepid /sys/kernel/mi_mempool/pids /sys/kernel/reserve_pool/pid /proc/sys/binder_prio/gallocator_pid
+
