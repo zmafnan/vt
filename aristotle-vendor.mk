@@ -4,8 +4,6 @@
 
 
 PRODUCT_COPY_FILES += \
-
-PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/mi_ext/etc/init/init.miui.mi_ext.rc:$(TARGET_COPY_OUT_MI_EXT)/etc/init/init.miui.mi_ext.rc \
     vendor/xiaomi/aristotle/proprietary/odm/etc/barrage_v3.tflite:$(TARGET_COPY_OUT_ODM)/etc/barrage_v3.tflite \
     vendor/xiaomi/aristotle/proprietary/odm/etc/camera/cameracustomize.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameracustomize.json \
@@ -579,7 +577,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/linker.config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/linker.config.pb \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
