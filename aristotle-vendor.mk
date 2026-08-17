@@ -122,7 +122,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/init.milletmonitor.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.milletmonitor.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/init.misight.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.misight.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/init.miui.cameraopt.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.miui.cameraopt.rc \
-    vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/init.miui.cust.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.miui.cust.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/init.miui.dumpaudiobinderInfo.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.miui.dumpaudiobinderInfo.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/init.miui.ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.miui.ext.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/init.nativedebug.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.nativedebug.rc \
