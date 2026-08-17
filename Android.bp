@@ -433,6 +433,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "audio.primary.mediatek",
     owner: "xiaomi",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -458,7 +459,7 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libbinder_ndk",
                 "libprocessgroup",
-                "android.hardware.audio.effect-V2-ndk",
+                "android.hardware.audio.effect-V3-ndk",
                 "libfmq",
                 "libbase",
                 "libbluetooth_audio_session_aidl_mtk",
@@ -470,7 +471,7 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "libhwbinder",
                 "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
-                "android.hardware.bluetooth.audio-V4-ndk",
+                "android.hardware.bluetooth.audio-V5-ndk",
                 "android.hardware.audio.common@5.0",
                 "libtinycompress",
                 "libaedv",
