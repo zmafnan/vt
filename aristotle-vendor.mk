@@ -473,7 +473,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/aee_aedv64_v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64_v2.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.bluetooth-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth-service-mediatek.rc \
-    vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.boot-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.mtk.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
@@ -1814,7 +1813,6 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.bluetooth-service-mediatek \
-    android.hardware.boot-service.mtk \
     android.hardware.drm-service.clearkey \
     android.hardware.dumpstate-service.xiaomi \
     android.hardware.gatekeeper-service.mitee \

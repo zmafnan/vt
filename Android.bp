@@ -26788,37 +26788,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "android.hardware.boot-service.mtk",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.boot-service.mtk",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "liblog",
-                "libutils",
-                "libmtk_bsg",
-                "android.hardware.boot@1.1",
-                "android.hardware.boot-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
 
 cc_prebuilt_binary {
     name: "android.hardware.drm-service.clearkey",
