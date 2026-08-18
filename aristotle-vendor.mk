@@ -103,6 +103,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/odm/firmware/goodix_firmware_aristotle.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_firmware_aristotle.bin \
     vendor/xiaomi/aristotle/proprietary/odm/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_ODM)/firmware/goodix_test_limits_255.csv \
     vendor/xiaomi/aristotle/proprietary/odm/mitee/ta/123af5d1-d6f5-cc54-f78fa19030b2e76a.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/123af5d1-d6f5-cc54-f78fa19030b2e76a.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/2e8fade5-0c7a-46cc-810e6468baee66b9.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/2e8fade5-0c7a-46cc-810e6468baee66b9.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/377ee4e8-af0e-474f-a9d636a9268fe85c.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/4d573443-6a56-4272-ac6f2425af9ef9bb.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/4d573443-6a56-4272-ac6f2425af9ef9bb.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/68bcd09d-4101-4c0a-9552ed0af9ae16b2.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/68bcd09d-4101-4c0a-9552ed0af9ae16b2.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/86f623f6-a299-4dfd-b560ffd3e5a62c29.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/86f623f6-a299-4dfd-b560ffd3e5a62c29.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/88ce8e6b-8646-4092-bb78faf5b55ff4df.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/88ce8e6b-8646-4092-bb78faf5b55ff4df.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/8aaaf201-2460-0000-7143fe4f7c823c80.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/8aaaf201-2460-0000-7143fe4f7c823c80.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/9811c1f6-47e3-5cea-ae6ef62ba433c4fd.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/9811c1f6-47e3-5cea-ae6ef62ba433c4fd.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/a734eed9-d6a1-4244-aa507c99719e7b7f.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/a734eed9-d6a1-4244-aa507c99719e7b7f.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/d32d9207-6285-6d86-6cb98eaf46f6b4ec.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/d32d9207-6285-6d86-6cb98eaf46f6b4ec.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta \
+    vendor/xiaomi/aristotle/proprietary/vendor/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/aee_aed.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/aee_aed64.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed64.rc \
     vendor/xiaomi/aristotle/proprietary/system_ext/etc/init/aee_aed64_v2.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aee_aed64_v2.rc \
