@@ -451,6 +451,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.emmc \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/fstab.mt6895:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6895 \
+    vendor/xiaomi/aristotle/proprietary/vendor/etc/init.insmod.mt6895.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6895.cfg \
+    vendor/xiaomi/aristotle/proprietary/vendor/etc/init.insmod.touch.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.touch.cfg \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/xiaomi/aristotle/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
