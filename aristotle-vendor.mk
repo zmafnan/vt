@@ -978,6 +978,8 @@ PRODUCT_PACKAGES += \
     fingerprint.goodix_fod \
     gps.default \
     hwcomposer.mtk_common \
+    android.hardware.graphics.allocator-V2-mediatek \
+    mapper.mediatek \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
@@ -1269,6 +1271,7 @@ PRODUCT_PACKAGES += \
     aristotleimx707_mipi_raw_IdxMgr \
     aristotleov13b10_mipi_raw_IdxMgr \
     aristotleov50d_mipi_raw_IdxMgr \
+    arm.graphics-V5-ndk \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.af.assist.models1d \
@@ -1606,6 +1609,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.dmc-V1-ndk-vendor \
     vendor.mediatek.hardware.gnss-V3-ndk \
     vendor.mediatek.hardware.gnss.batching-V1-ndk \
+    vendor.mediatek.hardware.graphics-V1-ndk \
     vendor.mediatek.hardware.lbs-V1-ndk \
     vendor.mediatek.hardware.lbs@1.0-vendor \
     vendor.mediatek.hardware.log-V1-ndk-vendor \
@@ -1836,6 +1840,7 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget-aidl-service.mediatek \
     android.hardware.wifi-service-lazy \
     hostapd \
+    android.hardware.graphics.allocator-V2-service-mediatek.mt6895 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
@@ -1942,14 +1947,18 @@ PRODUCT_PACKAGES += \
     soterd \
     toucheventcheck \
     vib_cal \
+    vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
     vendor_bin_hw_camerahalserver \
     vendor_lib64_egl_libGLES_mali_so \
+    vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so \
+    vendor_lib64_hw_mapper_mediatek_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal_aidl@1_0-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
     vendor_lib64_aristotleimx596_mipi_raw_IdxMgr_so \
     vendor_lib64_aristotleimx707_mipi_raw_IdxMgr_so \
     vendor_lib64_aristotleov13b10_mipi_raw_IdxMgr_so \
     vendor_lib64_aristotleov50d_mipi_raw_IdxMgr_so \
+    vendor_lib64_arm_graphics-V5-ndk_so \
     vendor_lib64_lib3a_ae_core_so \
     vendor_lib64_lib3a_ae_so \
     vendor_lib64_lib3a_af_assist_so \

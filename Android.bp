@@ -674,6 +674,101 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.graphics.allocator-V2-mediatek",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6895/android.hardware.graphics.allocator-V2-mediatek.so",
+            ],
+            shared_libs: [
+                "arm.graphics-V5-ndk",
+                "libhidlbase",
+                "libgralloctypes",
+                "libdrm",
+                "libutils",
+                "libcutils",
+                "android.hardware.graphics.common-V6-ndk",
+                "libgralloc_extra",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libged",
+                "libgpud",
+                "libdmabufheap",
+                "libnativewindow",
+                "libhardware",
+                "libutilscallstack",
+                "vendor.mediatek.hardware.graphics-V1-ndk",
+                "libmtk_mali_user",
+                "android.hardware.graphics.common@1.2",
+                "liblog",
+                "libbase",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.mapper@4.0",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw/mt6895",
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "mapper.mediatek",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/mt6895/mapper.mediatek.so",
+            ],
+            shared_libs: [
+                "arm.graphics-V5-ndk",
+                "android.hardware.graphics.common-V6-ndk",
+                "libhidlbase",
+                "libdrm",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloctypes",
+                "libutils",
+                "libsync",
+                "libcutils",
+                "libgralloc_extra",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libged",
+                "libgpud",
+                "libdmabufheap",
+                "libnativewindow",
+                "libhardware",
+                "libutilscallstack",
+                "vendor.mediatek.hardware.graphics-V1-ndk",
+                "libmtk_mali_user",
+                "android.hardware.graphics.common@1.2",
+                "liblog",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw/mt6895",
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.camera.bgservice@1.1-impl",
     owner: "xiaomi",
     strip: {
@@ -9170,6 +9265,31 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     relative_install_path: "mt6895",
     prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "arm.graphics-V5-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6895/arm.graphics-V5-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6895",
     soc_specific: true,
 }
 
@@ -20817,6 +20937,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.graphics-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.graphics-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.lbs-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -27513,6 +27657,49 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "android.hardware.graphics.allocator-V2-service-mediatek.mt6895",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/mt6895/android.hardware.graphics.allocator-V2-service-mediatek.mt6895",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common-V6-ndk",
+                "libgralloc_extra",
+                "libgralloc_metadata",
+                "libgralloctypes_mtk",
+                "libged",
+                "libgpud",
+                "libdmabufheap",
+                "libnativewindow",
+                "libhardware",
+                "libutilscallstack",
+                "vendor.mediatek.hardware.graphics-V1-ndk",
+                "libmtk_mali_user",
+                "android.hardware.graphics.common@1.2",
+                "libbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.allocator-V2-mediatek",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    relative_install_path: "hw/mt6895",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "camerahalserver",
     owner: "xiaomi",
     target: {
@@ -30822,6 +31009,13 @@ cc_prebuilt_binary {
 }
 
 install_symlink {
+    name: "vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek",
+    soc_specific: true,
+    installed_location: "bin/hw/android.hardware.graphics.allocator-V2-service-mediatek",
+    symlink_target: "/vendor/bin/hw/mt6895/android.hardware.graphics.allocator-V2-service-mediatek.mt6895",
+}
+
+install_symlink {
     name: "vendor_bin_hw_camerahalserver",
     soc_specific: true,
     installed_location: "bin/hw/camerahalserver",
@@ -30836,6 +31030,20 @@ install_symlink {
 }
 
 install_symlink {
+    name: "vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/android.hardware.graphics.allocator-V2-mediatek.so",
+    symlink_target: "/vendor/lib64/hw/mt6895/android.hardware.graphics.allocator-V2-mediatek.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_hw_mapper_mediatek_so",
+    soc_specific: true,
+    installed_location: "lib64/hw/mapper.mediatek.so",
+    symlink_target: "/vendor/lib64/hw/mt6895/mapper.mediatek.so",
+}
+
+install_symlink {
     name: "vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal_aidl@1_0-impl_so",
     soc_specific: true,
     installed_location: "lib64/hw/vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl.so",
@@ -30847,6 +31055,13 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so",
     symlink_target: "/vendor/lib64/hw/mt6895/vendor.mediatek.hardware.pq_aidl-impl.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_arm_graphics-V5-ndk_so",
+    soc_specific: true,
+    installed_location: "lib64/arm.graphics-V5-ndk.so",
+    symlink_target: "/vendor/lib64/mt6895/arm.graphics-V5-ndk.so",
 }
 
 install_symlink {
@@ -32887,4 +33102,3 @@ prebuilt_etc {
     sub_dir: "camera",
     soc_specific: true,
 }
-
