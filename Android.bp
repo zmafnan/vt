@@ -691,7 +691,7 @@ cc_prebuilt_library_shared {
                 "libdrm",
                 "libutils",
                 "libcutils",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloc_extra",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
@@ -734,7 +734,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "arm.graphics-V5-ndk",
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libhidlbase",
                 "libdrm",
                 "android.hardware.graphics.mapper@4.0",
@@ -27665,7 +27665,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mt6895/android.hardware.graphics.allocator-V2-service-mediatek.mt6895",
             ],
             shared_libs: [
-                "android.hardware.graphics.common-V6-ndk",
+                "android.hardware.graphics.common-V7-ndk",
                 "libgralloc_extra",
                 "libgralloc_metadata",
                 "libgralloctypes_mtk",
