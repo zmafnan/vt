@@ -963,6 +963,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.core-impl-mediatek \
     android.hardware.bluetooth.audio-impl-mediatek \
     android.hardware.power-service-mediatek \
+    android.hardware.graphics.common-V6-ndk-vendor \
     com.fingerprints.extension3-V1-ndk \
     libGLES_meow \
     libMEOW_data \
