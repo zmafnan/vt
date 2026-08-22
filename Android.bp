@@ -136,7 +136,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.common-V6-ndk-vendor",
+    name: "prebuilt_android.hardware.graphics.common-V6-ndk",
     stem: "android.hardware.graphics.common-V6-ndk",
     owner: "xiaomi",
     strip: {
